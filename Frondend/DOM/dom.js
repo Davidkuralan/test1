@@ -17,3 +17,14 @@ let test1 = document.getElementsByClassName('new-list-item');
 test1[0].style.fontWeight = '900';
 let test2 = document.getElementsByTagName('li');
 test2[4].style.backgroundColor = 'red';
+console.log(test2);
+let second = document.querySelector('.list-group-item:nth-child(2)');
+second.style.backgroundColor = 'green';
+let third = document.querySelector('.list-group-item:nth-child(3)');
+third.style.color = 'green';
+let items = document.querySelectorAll('.list-group-item');
+items[1].style.color = 'green';
+let odd = document.querySelectorAll('li:nth-child(odd)')
+for(let x = 0; x < odd.length; x++){
+    odd[x].style.backgroundColor = 'green';
+}
