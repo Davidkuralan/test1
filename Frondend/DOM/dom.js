@@ -13,3 +13,7 @@ item[1].style.color = 'yellow';
 item[1].style.fontWeight = '900';
 item[3].style.color = 'orange';
 item[3].style.fontWeight = '900';
+let test1 = document.getElementsByClassName('new-list-item');
+test1[0].style.fontWeight = '900';
+let test2 = document.getElementsByTagName('li');
+test2[4].style.backgroundColor = 'red';
