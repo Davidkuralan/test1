@@ -30,7 +30,11 @@ let myObj = {
 
 let newObj = JSON.stringify(myObj);
 
-localStorage.setItem("User",newObj);
+// localStorage.setItem("User",newObj);
+axios
+.post('https://crudcrud.com/api/e347f8dcbdfc412081636e130663ae4f/appointment',{newObj})
+.then(res => showOutput(res))
+.catch(err => console.error(err));
 
     // Create new list item with user
     const li = document.createElement('li');
